@@ -131,8 +131,12 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
     sudo systemctl start jenkins
     sudo systemctl enable jenkins
     ```
+4. **Clone git repo to ubuntu machine:**
+   ```bash
+   git clone <git repo link>
+   ```
 
-4.  **Initial Jenkins Setup:**
+5.  **Initial Jenkins Setup:**
     * Retrieve the initial admin password:
         ```bash
         sudo cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -140,7 +144,7 @@ This document outlines the step-by-step process for deploying a 2-tier web appli
     * Access the Jenkins dashboard at `http://<ec2-public-ip>:8080`.
     * Paste the password, install suggested plugins, and create an admin user.
 
-5.  **Grant Jenkins Docker Permissions:**
+6.  **Grant Jenkins Docker Permissions:**
     ```bash
     sudo usermod -aG docker jenkins
     sudo systemctl restart jenkins
