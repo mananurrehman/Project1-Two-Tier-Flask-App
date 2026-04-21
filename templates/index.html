@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prashant | Flask App 🚀</title>
+    <title>Manan ur Rehman | DevOps Engineer 🚀</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
@@ -88,6 +88,69 @@
             line-height: 1.5;
         }
 
+        .tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tool-tag {
+            padding: 4px 12px;
+            background: rgba(85, 153, 255, 0.12);
+            border: 1px solid rgba(85, 153, 255, 0.3);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #5599FF;
+            font-weight: 500;
+        }
+
+        .projects {
+            margin-bottom: 20px;
+        }
+
+        .projects h2 {
+            font-size: 1.3rem;
+            color: #5599FF;
+            margin-bottom: 12px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(85, 153, 255, 0.15);
+            border-radius: 12px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .project-card p {
+            font-size: 0.85rem;
+            color: #bbb;
+            line-height: 1.5;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .project-tag {
+            padding: 2px 9px;
+            background: rgba(85, 153, 255, 0.08);
+            border: 1px solid rgba(85, 153, 255, 0.2);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #88aadd;
+        }
+
         .messages {
             margin-bottom: 15px;
             padding: 12px;
@@ -163,24 +226,96 @@
     <div class="container">
         <!-- Profile photo -->
         <div class="profile-photo">
-            <img src="1.png" alt="Prashant Photo">
+            <img src="1.png" alt="Manan ur Rehman Photo">
         </div>
 
         <!-- Content -->
         <div class="content">
             <div class="header">
-                <h1>Prashant Gohil | DevOps Enthusiast</h1>
-                <p>Student | Aspiring Cloud & DevOps Engineer</p>
+                <h1>Manan ur Rehman | DevOps Engineer</h1>
+            </div>
+
+            <div class="tools">
+                <span class="tool-tag">Linux</span>
+                <span class="tool-tag">GitHub</span>
+                <span class="tool-tag">GitHub Actions</span>
+                <span class="tool-tag">Jenkins</span>
+                <span class="tool-tag">Docker</span>
+                <span class="tool-tag">Docker Compose</span>
+                <span class="tool-tag">Kubernetes</span>
+                <span class="tool-tag">Nginx</span>
+                <span class="tool-tag">Trivy</span>
+                <span class="tool-tag">SonarQube</span>
+                <span class="tool-tag">Terraform</span>
+                <span class="tool-tag">AWS EC2</span>
+                <span class="tool-tag">Oracle Cloud</span>
             </div>
 
             <div class="about">
                 <h2>About Me</h2>
-                <p>Hi, I'm <b>Prashant</b> 👋, a student and aspiring Cloud & DevOps engineer.</p>
+                <p>Hi, I'm <b>Manan ur Rehman</b> 👋, a DevOps Engineer based in Islamabad, Pakistan.</p>
                 <p style="margin-top:10px;">
-                    <b>Project:</b> I have deployed a 2-tier Flask application (Flask + MySQL) on AWS EC2 using Docker.  
-                    I used Docker Compose to manage both containers with volumes and a custom network.  
-                    The source code is hosted on GitHub, and Jenkins is integrated to set up a CI/CD pipeline for automated deployment.
+                    BS Information Technology graduate passionate about building automated, secure, and scalable CI/CD pipelines.
+                    I love turning complex infrastructure into clean, repeatable deployments.
                 </p>
+            </div>
+
+            <div class="projects">
+                <h2>My Projects</h2>
+
+                <div class="project-card">
+                    <h3>💰 Finvestigate — Personal Finance Tracker</h3>
+                    <p>Personal finance tracker with RBAC, Chart.js dashboard, and PKR/USD converter. Deployed on Oracle Cloud via GitHub Actions with Docker Compose and Nginx reverse proxy.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">Docker Compose</span>
+                        <span class="project-tag">GitHub Actions</span>
+                        <span class="project-tag">Oracle Cloud</span>
+                        <span class="project-tag">Nginx</span>
+                        <span class="project-tag">Chart.js</span>
+                        <span class="project-tag">RBAC</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🔐 QuickStay — Hotel Booking Platform</h3>
+                    <p>Flask + PostgreSQL hotel booking app with a fully chained GitHub Actions DevSecOps pipeline: CI → Docker security scanning → AWS EC2 deploy. Incorporates Trivy, Bandit, Gitleaks, Hadolint, pip-audit, and SonarQube.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">GitHub Actions</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">AWS EC2</span>
+                        <span class="project-tag">Trivy</span>
+                        <span class="project-tag">SonarQube</span>
+                        <span class="project-tag">Bandit</span>
+                        <span class="project-tag">Gitleaks</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🔗 Bitly Clone — URL Shortener</h3>
+                    <p>URL shortener app with a Jenkins CI/CD pipeline featuring SonarQube code quality analysis, Trivy container scanning, and OWASP dependency checks.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Jenkins</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">SonarQube</span>
+                        <span class="project-tag">Trivy</span>
+                        <span class="project-tag">OWASP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>🚀 2-Tier Flask App — This Project</h3>
+                    <p>Flask + MySQL deployed on AWS EC2 using Docker Compose with custom networks and volumes. Jenkins pipeline handles automated CI/CD deployment end-to-end.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Flask</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">Docker Compose</span>
+                        <span class="project-tag">AWS EC2</span>
+                        <span class="project-tag">Jenkins</span>
+                    </div>
+                </div>
             </div>
 
             <div class="messages">
